@@ -34,7 +34,7 @@ fetchAstronauts("http://api.open-notify.org/astros.json")
 async function fetchPictures(requestURL) {
     let picture = await fetch(requestURL)
     let data = await picture.json()
-    console.log(data)
+    console.log(data.url)
 }
 
 // CALL your function here
